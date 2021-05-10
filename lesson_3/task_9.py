@@ -7,7 +7,9 @@ import random
 
 MIN_NUM = 1
 MAX_NUM = 100
-my_matrix = [[random.randint(MIN_NUM, MAX_NUM) for _ in range(5)] for _ in range(4)]
+ROWS = 5
+COLUMNS = 4
+my_matrix = [[random.randint(MIN_NUM, MAX_NUM) for _ in range(ROWS)] for _ in range(COLUMNS)]
 
 for row in my_matrix:
     for num in row:

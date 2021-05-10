@@ -15,8 +15,7 @@ my_list = [random.randint(MIN_NUM, MAX_NUM) for _ in range(LIST_LEN)]
 print(my_list)
 
 result_list = []
-for el in my_list:
+for i, el in enumerate(my_list):
     if el % 2 == 0:
-        result_list.append(el)
+        result_list.append(i)
 print(result_list)
-
